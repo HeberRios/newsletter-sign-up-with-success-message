@@ -19,7 +19,7 @@
     </head>
     <body>
         <main>
-            <article>
+            <article class="newsletter-sign-up-article">
                 <header class="form-header">
                     <picture>
                         <source
@@ -35,21 +35,44 @@
                     </picture>
                 </header>
 
-                <section>
+                <section class="newsletter-info-wrapper">
                     <div class="newsletter-description">
                         <h2>Stay updated!</h2>
                         <p>
                             Join 60,000+ product managers receiving monthly
                             updates on:
                         </p>
-                        <ul>
-                            <li class="newsletter-content">
-                                Product discovery and building what matters
+                        <ul class="newsletter-list">
+                            <li class="newsletter-content-item">
+                                <img
+                                    src="./assets/images/icon-list.svg"
+                                    alt=""
+                                    class="list-icon"
+                                />
+                                <p class="list-item-description">
+                                    Product discovery and building what matters
+                                </p>
                             </li>
-                            <li class="newsletter-content">
-                                Measuring to ensure updates are a success
+                            <li class="newsletter-content-item">
+                                <img
+                                    src="./assets/images/icon-list.svg"
+                                    alt=""
+                                    class="list-icon"
+                                />
+                                <p class="list-item-description">
+                                    Measuring to ensure updates are a success
+                                </p>
                             </li>
-                            <li class="newsletter-content">And much more!</li>
+                            <li class="newsletter-content-item">
+                                <img
+                                    src="./assets/images/icon-list.svg"
+                                    alt=""
+                                    class="list-icon"
+                                />
+                                <p class="list-item-description">
+                                    And much more!
+                                </p>
+                            </li>
                         </ul>
                     </div>
 
@@ -61,14 +84,14 @@
                             id="email"
                             placeholder="email@company.com"
                         />
+                        <button
+                            form="newsletter-form"
+                            type="submit"
+                            class="submit-btn"
+                        >
+                            Subscribe to monthly newsletter
+                        </button>
                     </form>
-                    <button
-                        form="newsletter-form"
-                        type="submit"
-                        class="submit-btn"
-                    >
-                        Subscribe to monthly newsletter
-                    </button>
                 </section>
             </article>
         </main>
