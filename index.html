@@ -19,7 +19,7 @@
     </head>
     <body>
         <main>
-            <article class="newsletter-sign-up-article hidden">
+            <article class="newsletter-sign-up-article">
                 <header class="form-header">
                     <picture>
                         <source
@@ -95,8 +95,8 @@
                 </section>
             </article>
 
-            <article class="success-component">
-                <section class="success-message">
+            <article class="success-component hidden">
+                <section class="success-message-wrapper">
                     <img
                         src="./assets/images/icon-success.svg"
                         alt="Check mark with orange background"
@@ -104,8 +104,11 @@
                     <h2>Thanks for subscribing!</h2>
                     <p>
                         A confirmation email has been sent to
-                        ash@loremcompany.com. Please open it and click the
-                        button inside to confirm your subscription.
+                        <strong id="accepted-email">
+                            ash@loremcompany.com.
+                        </strong>
+                        Please open it and click the button inside to confirm
+                        your subscription.
                     </p>
                 </section>
                 <button class="dismiss-btn">Dismiss message</button>
