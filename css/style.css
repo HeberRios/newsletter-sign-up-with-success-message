@@ -192,6 +192,10 @@ input[type="email"] {
     background-color: var(--clr-dark-slate-grey);
 }
 
+.hidden {
+    display: none;
+}
+
 /* ATTRIBUTION STYLES */
 
 .attribution {
@@ -200,7 +204,7 @@ input[type="email"] {
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 50%, 53%);
 }
 
 .attribution a:hover,
