@@ -18,22 +18,60 @@
         </title>
     </head>
     <body>
-        <!-- Sign-up form start -->
+        <main>
+            <article>
+                <header class="form-header">
+                    <picture>
+                        <source
+                            media="(min-width: )"
+                            srcset="
+                                ./assets/images/illustration-sign-up-desktop.svg
+                            "
+                        />
+                        <img
+                            src="./assets/images/illustration-sign-up-mobile.svg"
+                            alt="App mockup with data and an orange background"
+                        />
+                    </picture>
+                </header>
 
-        <!-- Stay updated!
+                <section>
+                    <div class="newsletter-description">
+                        <h2>Stay updated!</h2>
+                        <p>
+                            Join 60,000+ product managers receiving monthly
+                            updates on:
+                        </p>
+                        <ul>
+                            <li class="newsletter-content">
+                                Product discovery and building what matters
+                            </li>
+                            <li class="newsletter-content">
+                                Measuring to ensure updates are a success
+                            </li>
+                            <li class="newsletter-content">And much more!</li>
+                        </ul>
+                    </div>
 
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter -->
-
-        <!-- Sign-up form end -->
+                    <form id="newsletter-form" class="sign-up-form">
+                        <label for="email"> Email address </label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="email@company.com"
+                        />
+                    </form>
+                    <button
+                        form="newsletter-form"
+                        type="submit"
+                        class="submit-btn"
+                    >
+                        Subscribe to monthly newsletter
+                    </button>
+                </section>
+            </article>
+        </main>
 
         <!-- Success message start -->
 
