@@ -127,6 +127,8 @@ body {
 
 /* NEWSLETTER ARTICLE STYLES */
 .newsletter-sign-up-article {
+    min-width: 23.4375rem;
+    max-width: 23.4375rem;
     background-color: var(--clr-white);
 }
 
@@ -215,7 +217,7 @@ input[type="email"]:hover {
 
 .success-component {
     height: 100vh;
-    min-width: 375px;
+    min-width: 23.4375rem;
     min-height: 43.125rem;
     max-height: 50.75rem;
     display: flex;
@@ -252,4 +254,44 @@ input[type="email"]:hover {
 .attribution a:hover,
 .attribution a:focus {
     color: hsl(228, 99%, 70%);
+}
+
+@media (min-width: 40rem) {
+    body {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 62rem) {
+    .newsletter-sign-up-article {
+        max-width: 58rem;
+        min-height: 40.0625rem;
+        display: flex;
+        flex-direction: row-reverse;
+        border-radius: 2.25rem;
+        overflow: hidden;
+    }
+
+    .form-header {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+
+    .newsletter-info-wrapper {
+        max-width: 23.5rem;
+        padding: 0;
+        margin: 6.0625rem 4rem 6.125rem 4rem;
+    }
+
+    .form-header,
+    .newsletter-info-wrapper {
+        flex: 1;
+    }
+
+    .newsletter-description {
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
 }
