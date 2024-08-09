@@ -20,6 +20,7 @@
     /* ### Primary */
 
     --clr-tomato: hsl(4, 100%, 67%);
+    --clr-dark-tomato: #e44d6e;
 
     /* ### Neutral */
 
@@ -107,6 +108,11 @@ h6 {
 
 /* GENERAL STYLES */
 
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem var(--clr-tomato);
+}
+
 body {
     min-height: 100vh;
     display: grid;
@@ -180,8 +186,11 @@ input[type="email"] {
     margin-bottom: 1.5rem;
 }
 
-.submit-btn,
-.dismiss-btn {
+input[type="email"]:hover {
+    cursor: pointer;
+}
+
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,6 +200,15 @@ input[type="email"] {
     border-radius: 0.5rem;
     padding: 1rem 2.9375rem;
     background-color: var(--clr-dark-slate-grey);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(
+        90deg,
+        var(--clr-dark-tomato),
+        var(--clr-tomato)
+    );
 }
 
 /* SUCCESS MESSAGE COMPONENT STYLES */
