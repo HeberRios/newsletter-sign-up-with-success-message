@@ -236,10 +236,6 @@ input[type="email"]:hover {
     }
 }
 
-.hidden {
-    display: none;
-}
-
 /* ATTRIBUTION STYLES */
 
 .attribution {
@@ -256,9 +252,25 @@ input[type="email"]:hover {
     color: hsl(228, 99%, 70%);
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 35.5rem) {
     body {
         padding: 2rem;
+    }
+    .success-component {
+        min-height: unset;
+        max-width: 31.5rem;
+        max-height: 32.5rem;
+        padding: 3rem 4rem 4rem 4rem;
+        border-radius: 2.25rem;
+
+        img {
+            margin-top: 0;
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+        }
     }
 }
 
@@ -294,4 +306,8 @@ input[type="email"]:hover {
             font-size: 3.5rem;
         }
     }
+}
+
+.hidden {
+    display: none;
 }
