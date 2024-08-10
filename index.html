@@ -12,6 +12,7 @@
         />
 
         <link rel="stylesheet" href="./css/style.css" />
+        <script defer src="./js/main.js"></script>
 
         <title>
             Frontend Mentor | Newsletter sign-up form with success message
@@ -19,7 +20,10 @@
     </head>
     <body>
         <main>
-            <article class="newsletter-sign-up-article">
+            <article
+                id="newsletter-info-window"
+                class="newsletter-sign-up-article"
+            >
                 <header class="form-header">
                     <picture>
                         <source
@@ -92,6 +96,7 @@
                             placeholder="email@company.com"
                         />
                         <button
+                            id="submit-btn"
                             form="newsletter-form"
                             type="submit"
                             class="btn"
@@ -102,7 +107,7 @@
                 </section>
             </article>
 
-            <article class="success-component hidden">
+            <article id="success-window" class="success-component hidden">
                 <section class="success-message-wrapper">
                     <img
                         src="./assets/images/icon-success.svg"
@@ -111,14 +116,12 @@
                     <h2>Thanks for subscribing!</h2>
                     <p>
                         A confirmation email has been sent to
-                        <strong id="accepted-email">
-                            ash@loremcompany.com.
-                        </strong>
+                        <span id="accepted-email"> ash@loremcompany.com. </span>
                         Please open it and click the button inside to confirm
                         your subscription.
                     </p>
                 </section>
-                <button class="btn">Dismiss message</button>
+                <button id="dismiss-btn" class="btn">Dismiss message</button>
             </article>
         </main>
 

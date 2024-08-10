@@ -20,6 +20,7 @@
     /* ### Primary */
 
     --clr-tomato: hsl(4, 100%, 67%);
+    --clr-tomato-transparent: hsla(4, 100%, 67%, 0.173);
     --clr-dark-tomato: #e44d6e;
 
     /* ### Neutral */
@@ -178,7 +179,7 @@ label[for="email"] {
 }
 
 input[type="email"] {
-    color: var(--clr-grey);
+    color: var(--clr-dark-slate-grey);
     line-height: 1;
     padding: 1rem 1.5rem;
     border: 0.0625rem solid var(--clr-grey);
@@ -186,8 +187,21 @@ input[type="email"] {
     margin-bottom: 1.5rem;
 }
 
+input[type="email"]::placeholder {
+    color: var(--clr-grey);
+}
+
+input[type="email"].invalid::placeholder {
+    color: var(--clr-tomato);
+}
+
 input[type="email"]:hover {
     cursor: pointer;
+}
+
+input[type="email"].invalid {
+    background-color: var(--clr-tomato-transparent);
+    color: var(--clr-tomato);
 }
 
 .btn {
@@ -251,6 +265,10 @@ input[type="email"]:hover {
     h2 {
         margin-bottom: 1.5rem;
     }
+}
+
+#accepted-email {
+    font-weight: var(--fw-bold);
 }
 
 /* ATTRIBUTION STYLES */
