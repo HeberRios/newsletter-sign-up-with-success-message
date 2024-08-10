@@ -175,8 +175,6 @@ h2 {
 label[for="email"] {
     font-size: 0.75rem;
     font-weight: var(--fw-bold);
-    line-height: 1;
-    margin-bottom: 0.5rem;
 }
 
 input[type="email"] {
@@ -211,6 +209,25 @@ input[type="email"]:hover {
         var(--clr-dark-tomato),
         var(--clr-tomato)
     );
+}
+
+/* ERROR MESSAGE STYLES */
+
+.error-label-container {
+    position: relative;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+.error-msg {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    font-size: 0.75rem;
+    line-height: 1;
+    color: var(--clr-tomato);
+    white-space: nowrap;
+    opacity: 0;
 }
 
 /* SUCCESS MESSAGE COMPONENT STYLES */

@@ -77,7 +77,14 @@
                     </div>
 
                     <form id="newsletter-form" class="sign-up-form">
-                        <label for="email"> Email address </label>
+                        <div class="error-label-container">
+                            <label for="email"> Email address </label>
+                            <span
+                                id="email-error-msg"
+                                class="error-msg"
+                                aria-live="polite"
+                            ></span>
+                        </div>
                         <input
                             type="email"
                             name="email"
