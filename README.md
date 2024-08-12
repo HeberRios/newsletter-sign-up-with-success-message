@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution URL]()
--   [Live Site URL]()
+-   [Solution URL](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-oqIFpE50d3)
+-   [Live Site URL](https://heberrios.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
 
